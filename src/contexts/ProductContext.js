@@ -6,7 +6,7 @@ const ProductProvider = ({children}) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch('https://gifporto.github.io/product_api/product.json');
+      const response = await fetch('https://fakestoreapi.com/products');
       const data = await response.json();
       setProducts(data);
     };
